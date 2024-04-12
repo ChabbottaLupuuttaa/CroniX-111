@@ -10,7 +10,7 @@ CroniX isn't your average school website. We're all about showcasing the talents
 * **Poetry Corner:** Prepare to have your mind blown by our students' creative wordplay.
 * **Book Reviews:** Discover your next great read, all recommended by your peers.
 
-We update CroniX regularly, so there's always something new to explore. 
+We update CroniX regularly, so there's always something new to explore.
 
 
 
