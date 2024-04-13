@@ -33,3 +33,58 @@ padding-right: 20px;
 .gazette-post-tag p{
     color: black;
 }
+
+.intro h3{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.intro p{
+    font-family: sans-serif;
+    font-weight:700;
+    color:white;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+     min-height: 10vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(index-master/img/blog-img/views2.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+    font-family: 'Times New Roman', Times, serif;
+  
+ 
+}
+
+.header {
+   
+}
+
+.course-col {
+    flex-basis: 40%;
+    background: #788086;
+    border-radius: 13px;
+    margin-bottom: 10%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    position:relative;
+    padding-top: 35px;
+
+
+}
+
+.course-col h3{
+    text-align: center;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.course-col p{
+    color: black;
+}
