@@ -44,7 +44,7 @@
                             <h5 class="breaking-news-title">A bit of  sweet words</h5>
                             <div id="breakingNewsTicker" class="ticker">
                                 <ul>
-                                    <li><a href="">"In revenge and love, a woman is more barbarous than man." </a></li>
+                                    <li><a href="">"The pain you are feeling now is less than the joy coming" Romans 18:20</li>
                                     <li><a href=""> You have to keep breaking your heart until it opens </a></li>
                                     <li><a href=""> “Try to be a rainbow in someone’s cloud.” </a></li>
                                     <li><a href="#">“The journey of a thousand miles begins with a single step.” </a></li>
@@ -217,7 +217,7 @@
 
     <section class="single-post-area">
         <!-- Single Post Title -->
-        <div class="single-post-title bg-img background-overlay" style="background-image: url(img/blog-img/cbu12.jpg);">
+        <div class="single-post-title bg-img background-overlay" style="background-image: url(img/blog-img/zibra*.jpg);">
             <div class="container h-100">
                 <div class="row h-100 align-items-end">
                     <div class="col-12">
@@ -227,12 +227,66 @@
                                 <a href="#">POEMS</a>
                             </div>
                             <h2 class="font-pt">LITERATURE PAGE,DEDICATED TO OUR LOVE FOR WORDS</h2>
-                            <p>April 13, 2024</p>
+                            <p>April 21, 2024</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="riddle">
+            <div class="col-lg-4">
+          <div class="categories">
+     <h4 style="text-align: center;color: black;padding-top: 30px;">This Week's Riddle</h4>
+<form id="riddleForm">
+  <p style="color: black;font: 300;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I? <br></p>
+ <br> <input type="text" id="riddleAnswer" placeholder="Enter your guess" required style="max-width: 200px; padding: 5px; border: 1px solid #721b1b; border-radius: 4px;"> <button type="button" onclick="checkAnswer()">Guess</button>
+ <br>
+  <p id="guessCount" style="color:black ;"> <br>Guesses remaining: 3</p>
+  <p id="hint" style="display: none;">Hint: I help you navigate places.</p>
+</form>
+<p id="answerMessage"></p>
+
+<script>
+function checkAnswer() {
+  const riddleForm = document.getElementById("riddleForm");
+  const answerInput = document.getElementById("riddleAnswer");
+  const answerMessage = document.getElementById("answerMessage");
+  const guessCountElement = document.getElementById("guessCount");
+  const hintElement = document.getElementById("hint");
+
+  const correctAnswer = "map"; // Change this to your desired riddle answer
+  let guessCount = 3; // Adjust the initial number of guesses allowed
+
+  // Get the user's guess (ensure form is submitted)
+  if (!riddleForm.checkValidity()) {
+    riddleForm.reportValidity(); // Show browser's validation message if empty field submitted
+    return;
+  }
+  const userAnswer = answerInput.value.trim().toLowerCase();
+
+  if (userAnswer === correctAnswer) {
+    answerMessage.textContent = "Congratulations! You guessed the riddle correctly.";
+    riddleForm.disabled = true; // Disable form after correct answer
+  } else {
+    guessCount--;
+    guessCountElement.textContent = `Guesses remaining: ${guessCount}`;
+    answerMessage.textContent = "Oops! That's not quite right.";
+
+    if (guessCount <= 0) {
+      answerMessage.textContent = "You're out of guesses! The answer is " + correctAnswer;
+      riddleForm.disabled = true; // Disable form after showing answer
+    } else if (guessCount === 1) {
+      hintElement.style.display = "block"; // Show hint on the second-to-last guess
+    }
+  }
+
+  // Clear the input field for the next guess
+  answerInput.value = "";
+}
+</script>
+        </div>
+
 
         <div class="single-post-contents">
             <div class="container">
@@ -244,24 +298,21 @@
                     </div>
                     <div class="col-12">
                         <div class="single-post-thumb">
-                            <h1> <i>Aesop  weekly Fable 1 </i></h1>
+                            <h1> <i>Aesop  weekly Fable 2</i></h1>
                             <img src="" alt="" style="border: 20;">
 
                             <hr>
-                            <h2> The Wolf and the Lamb</h2>
-                            <div class="words" style="color: black;font-style: italic; padding-left:10px ; padding-right: 10px; font-size: 19px; line: height 1px;">
-                                 <p style="color: black;"> Wolf, meeting with a Lamb astray from the fold, resolved not to lay violent
-hands on him, but to find some plea to justify to the Lamb the Wolf's right
-to eat him. He thus addressed him: "Sirrah, last year you grossly insulted
-me." "Indeed," bleated the Lamb in a mournful tone of voice, "I was not
-then born." </p>
-<p style="color: black;"> Then said the Wolf, "You feed in my pasture." "No, good sir,"
-replied the Lamb, "I have not yet tasted grass." Again said the Wolf, "You
-drink of my well." "No," exclaimed the Lamb, "I never yet drank water, for
-as yet my mother's milk is both food and drink to me." Upon which the
-Wolf seized him and ate him up, saying, "Well! I won't remain supper-less,
-even though you refute every one of my imputations." The tyrant will
-always find a pretext for his tyranny.</p>
+                            <h2> The Bat and the Weasels</h2>
+               
+<p style="color: black;"> 
+A BAT who fell upon the ground and was caught by a Weasel pleaded to be
+spared his life. The Weasel refused, saying that he was by nature the enemy
+of all birds. The Bat assured him that he was not a bird, but a mouse, and
+thus was set free. Shortly afterwards the Bat again fell to the ground and
+was caughtby another Weasel, whom he likewise entreated not to eat him.
+The Weasel said that he had a special hostility to mice. The Bat assured him
+that he was not a mouse, but a bat, and thus a second time escaped. It is
+wise to turn circumstances to good account.</p>
 
 <hr>
                             </div>
@@ -272,56 +323,53 @@ always find a pretext for his tyranny.</p>
                         <div class="single-post-text">
                             <hr>
                             <h3 class="font-pt mb-0"> EDITORS CHOICE<br> POEM OF THE WEEK</h3>
-                            <hr>                             <img src="img/blog-img/maya.jpg" alt=""> 
+                            <hr>                             <img src="img/blog-img/friedrich-nietzsche_7GDfD_800.jpg" alt=""> 
 
-                                                        <h4 class="font-pt mb-0">  Maya Angelou <br> </h4>
+                                                        <h4 class="font-pt mb-0"> Friedrich Nietzsche <br> </h4>
                                                         <!------>
                                                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
- About Maya
+ About Friedrich
 </button>
 
 <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="staticBackdropLabel"> TALK ABOUT WOMAN CRUSH</h5>
+    <h5 class="offcanvas-title" id="staticBackdropLabel"> THE SUPERMAN</h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
     <div>
-    <p> Maya Angelou, born April 4, 1928 as Marguerite Johnson in St. Louis, was raised in segregated rural Arkansas. She was a poet, historian, author, actress, playwright, civil-rights activist, producer and director.
-    </p>
-    <p> She lectured throughout the US and abroad and was Reynolds professor of American Studies at Wake Forest University in North Carolina since 1981.
-    </p>
-    <p> She published ten best selling books and numerous magazine articles earning her Pulitzer Prize and National Book Award nominations. At the request of President Clinton, she wrote and delivered a poem at his 1993 presidential inauguration.</p>
+    <p> Nietzsche liked playfully juxtapose opposites, emphasizing the dyadic nature of love (close-by/far-away, to-love/to-pass-by, create-and-love-it/oppose-it).</p>
+    <p>  While the song of the lover was Nietzsche’s, he longed for those who didn’t share his feelings (such as Salomé)—the age-old tragedy of unrequited love. Given how he viewed women (as cats, birds and cows), 
+        it’s unsurprising that he was alone and unloved for most his life until his death.</p> 
+<p>
+Although Nietzsche might not have been a winner in the game of love, he was still a reflective contestant.  To be in love can drive a person to madness. For Nietzsche, though, the cause of his lunacy was probably a case of untreated syphilis. </p>
+
     </div>
   </div>
 </div>
                                                         <!------->
 
                             <hr>
-                            <h2 class="font-pt mb-0" style="font-size:40px ;text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;">  Touched By An Angel<br> </h2>
+                            <h2 class="font-pt mb-0" style="font-size:40px ;text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;">  Here are a few ardor-filled remarks about philo (love in Greek) that appear in the pages of Thus Spoke Zarathustra:<br> </h2>
    <div class="poem" style="text-align: center; color: black; font-size: 25px;">
    <hr>
-    <p style="color: black;">We, unaccustomed to courage</p>
-                               <p style="color: black;">exiles from delight</p>
-                               <pstyle="color: black;">live coiled in shells of loneliness</p>
-                               <p style="color: black;">until love leaves its high holy temple</p>
-                               <p style="color: black;">and comes into our sight</p>
-                               <p style="color: black;">Love arrives</p>
-                               <pstyle="color: black;">and in its train come ecstasies</p>
-                               <p style="color: black;">old memories of pleasure</p>
-                               <p style="color: black;">ancient histories of pain.</p>
-                               <p style="color: black;">Yet if we are bold,</p>
-                               <p style="color: black;">love strikes away the chains of fear</p>
-                               <p style="color: black;">from our souls.</p>
-                               <p style="color: black;">We are weaned from our timidity</p>
-                               <p style="color: black;">In the flush of love's light</p>
-                               <p style="color: black;">we dare be brave</p>
-                               <p style="color: black;">And suddenly we see</p>
-                               <p style="color: black;">that love costs all we are</p>
-                               <p style="color: black;">and will ever be.</p>
-                               <p style="color: black;">Yet it is only love</p>
-                               <p style="color: black;">which sets us free.</p>
-                               <p style="color: black;"> to liberate us into life.</p>
+    <p style="color: black;"> </p>
+                               <p style="color: black;">“I fear you close by, I love you far away.”<br>
+
+“Where one can no longer love, one should – pass by!”<br>
+
+“Whatever I create and how much I love it – soon I have to oppose it.”<br>
+
+“Devise the love that bears not only all punishment but also the guilt!”<br>
+
+“It is night: now do all leaping fountains speak louder. And my soul too is a leaping fountain…<br>
+
+Something unquenched, unquenchable, is in me that wants to speak out. A craving for love is in me, that itself speaks the language of love…<br>
+
+It is night: only now do all songs of lovers awaken. And my song too is the song of a lover.”<br>
+
+“Woman’s love involves injustice and blindness against everything that she does not love… Woman is not yet capable of friendship: women are still cats and birds. Or at best cows… “ </p>
+
    </div>
  
                         </div>
@@ -379,59 +427,35 @@ always find a pretext for his tyranny.</p>
                                 <div class="comment-wrapper d-md-flex align-items-start">
                                     <!-- Comment Meta -->
                                     <div class="comment-author">
-                                        <img src="img/blog-img/POEM_FACE/bunny.jpeg" alt="">
+                                        <img src="img/blog-img/IMG-20240419-WA0088 (2).jpg" alt="">
                                     </div>
                                     <!-- Comment Content -->
                                     <div class="comment-content">
-                                        <h5>The Atavistic Bunny</h5>
-                                        <span class="comment-date font-pt"><b>LET'S PLAY PRETEND</b></span>
-                                         <p>         Let’s pretend you’re a complete stranger.       </p>  
-  <p>    Let’s pretend our hearts don’t long to be with each other even though we’re so far apart.          </p> 
-   <p>    Let’s pretend my heart doesn’t race at the thought of your name.      </p> 
-  
+                                        <h5>~Eric Milambo </h5>
+                                        <span class="comment-date font-pt"><b>REALITY</b></span>
+                                        <p style="color:black ;font-size: 20px;">Reality, an intricate tapestry of false paths and truths we cannot speak.
+                                       A multifaceted jewel, very beautiful and cruel.
+                                        Our minds struggle to comprehend its true form,<br>
+<br>Aware of the tip of the iceberg, but not the storm.<br>
+
+<br>We wander, lost in its maze of corridors and walls,<br>
+<br>Seeking answers to life's questions, great and small.<br>
+
+<br>But the veil remains, a veil of ignorance and bliss,<br>
+<br>Obscuring the truth, a truth that we will forever miss.<br>
+
+<br>It encompasses all that we are, all we think we know,<br>
+<br>Yet the unknown remains vast, a void of secrets and woe.<br>
+
+<br>We reach, we grasp, we strive to understand,<br>
+<br>Yet reality remains beyond the limits of our hand.</p>
+                                      
 
 
 
 
-<p>        We can pretend but you and I both know it only makes the pain worse.      </p> 
 
-<p>        Pain we try so hard to ignore but we can’t because it seems to be the only thing keeping us going.      </p> 
-
-<p>        Could we pretend all our feelings were make believe?      </p> 
-
-<p>     That they were just tales meant to be left in the pages of a child’s story book.         </p> 
-
- <p>         That I could not be your princess who simply fell in love with one look.     </p> 
-
-<p>    Oh no, clearly our story is far greater than that of Captain Hook.          </p> 
-
-<p>     Can we pretend you’re made for someone else?         </p> 
-
-<p>        That you have eyes only for her and my heart doesn’t break every time you say her name.      </p> 
-
-<p>         Can we pretend we live in a world where I’m happy and you’re not even a thought that crosses my mind?     </p> 
-
-<p>        If all this were true it would be easier for me to walk around blind.      </p> 
-
-<p>     If all this were true, you wouldn’t be back again after telling me you found the love of your life.         </p> 
-
-<p>     Seeing you and her felt like being stabbed over and over with a knife.         </p> 
-
-<p>  I    t’s never easy to walk away, but how do I walk away when we’re both not ready to let go?     </p> 
-
-<p>    How do I let go when you constantly text me just when I think it’s over?          </p> 
-
-<p>  Let’s play pretend.            </p> 
-
-<p>       Let’s pretend we’re just friends because strangers is too far apart.       </p> 
-
-<p>         Let’s pretend you’re happy to see me with him.     </p> 
-
-<p>         Let’s pretend our friendship isn’t just a way to stay in each other’s lives from a distance.     </p>       
-
-
-
- <p>  Let’s pretend because pretending is clearly all we’re good at doing.</p>
+</p>
                                         <a class="reply-btn" href="#">Reply <i class="fa fa-reply" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
@@ -444,20 +468,26 @@ always find a pretext for his tyranny.</p>
                                             </div>
                                             <!-- Comment Content -->
                                             <div class="comment-content">
-                                                <h5>De Majik pen_cil</h5>
-                                                <span class="comment-date text-muted"> <b>ONCE UPON A TIME  </b></span>
-                                               <p> Once upon a time, always wondered why every story started with that line </p>
-                   <p>once upon a time he said it like he could see time. </p>
-                  <p>          He said I was young and in love I worshiped her just like a minion I was to blind to see that she was more than a villain <br> despite her making me cry like an onion</p>   
-                  <p>  …. say once upon a time once upon a time. once upon a time he always</p>
-                <p>  said it while sipping on wine, once upon a time, he said it like he would see time </p>
-                 <p> Once upon the reversal of time when the world stripped him off his manhood it was during his childhood that he never </p>
-                  <p> really understood the value of being prince and so he wanted to quickly ascend the thrown without the wisdom of the kingdom.</p>
-                 <p> But once upon a time life is not a play he got to dictate instead it’s a series of scenes that come about as a result of his choices.</p>
-                 <p>   He always had the option to heal when he had been hurt cause it’s no use hurting because he had been hurt.  </p>
-                  <p>   every choice he made was perceived as right to those behind him and before he realized it was a series of hurt people hurting people.</p>
-                  <p>    And as he took a last sip of his wine, he remembers that life is no fairy tale but his story had just ended with once upon a time.</p>
-                                                
+                                                <h5>Rasaq Malik</h5>
+                                                <span class="comment-date text-muted"> <b>IN ANOTHER WORLD </b></span>
+                                             
+                   <p style="color:black ;font-size: 20px;">In another world I want to be a father without<br>
+passing through the eternal insanity of mourning<br>
+<br>my children, without experiencing the ritual<br>
+of watching my children return home as bodies<br>
+<br>folded like a prayer mat, without spending my
+nights telling them the stories of a hometown
+where natives become aliens searching for
+a shelter. <br>I want my children to spread a mat
+outside my house and play without the walls
+of houses ripped by rifles.<br> I want to watch my children
+grow to recite the name of their homeland like Lord’s
+<br>Prayer, to frolic in the streets without being hunted like
+animals in the bush, without being mobbed to death.
+<br>In another world I want my children to tame grasshoppers
+in the field, to play with their dolls in the living room,
+to inhale the fragrance of flowers waving as wind blows,
+to see the birds measure the sky with their wings.</p>                             
                                                 <a class="reply-btn" href="#">Reply <i class="fa fa-reply" aria-hidden="true"></i></a>
                                             </div>
                                         </div>
@@ -474,37 +504,23 @@ always find a pretext for his tyranny.</p>
                                             </div>
                                             <!-- Comment Content -->
                                             <div class="comment-content">
-                                                <h5>Thabo Ravid Bwanali</h5>
-                                                <span class="comment-date text-muted">.....</span>
+                                                <h5>Alexis Teyie</h5>
+                                                <span class="comment-date text-muted">THERE IT GOES
+MAPENZI SI SHURUA, HUJA YAKAJA</span>
                
-                                                <p> Time is sleeping on my watch,</p>
+                                             <p style="color:black ;font-size: 20px;"> The night you leave, the sky breaks out
+in stars. They burn like open sores.
+The acacia, scarred from private wars,
+still has leaves.
 
-           <p>    Time is slipping on my watch.</p>                                  
-<p>Slow and steady, I wish its hands could be quickened, </p> 
-<p>To the next hour or minute, </p> 
-<p> Where in, my pain can not be experienced.</p> 
-
-<p>Fast and shaky, I wish this present moment ticked more than a day long, </p> 
-<p> So I can gyrate to my positive vibrations,</p> 
-<p> Write a song, maybe a poem,</p> 
-<p>Take a promenade with them who freeze time, imprinting vivid memories onto my mind’s canvas,  </p> 
-
-<p> But the hands of time are constrained, the least it could provide </p> 
-<p>Is a hand full of experience. </p> 
-
-<p>Time is a pandora box, </p> 
-<p>Every one of it’s hands is curious, </p> 
-<p>Curious as the sun, to shine on a rainy day </p> 
-<p> Curious as a child eager to tread the earth,</p> 
-<p>Curious as the moon waxing in full strength  </p> 
-<p> Curious as Life taking shape</p> 
-<p> Curious as death!</p> 
-
-<p> Curiosity furthers a thought,</p> 
-<p> What if we lived outside of time?</p> 
-<p> Well then we would be God,</p> 
-<p> Perhaps we can, yes on a blessed day,</p> 
-<p> When Time shall be no more.</p>                         
+<br>I am not radical in my sorrow.
+<br>What has come before,
+that which has been handed down—
+these are my only methods.
+<br>I feel what I feel should be felt.
+<br>I say nothing new, nothing different.
+<br>My concerns are as they were before:
+is the tea too cold to drink?</p>              
                                                 <a class="reply-btn" href="#">Reply <i class="fa fa-reply" aria-hidden="true"></i></a>
                                             </div>
                                         </div>
@@ -523,20 +539,51 @@ always find a pretext for his tyranny.</p>
                                             <div class="comment-content">
                                                 <h5> by Bhim Malichi</h5>
                                                 <span class="comment-date text-muted">Bliss</span>
-                                                <p>Because the setting sun does so well to bid us farewell in its gentle glare</p>
-                                                    <p>  We see a beauty there, as the sky is lit and the horizon is transformed with splendor,</p>
-                                                       <p>What i notice there is a cry . One filled with grandeur and applause, </p>
-                                                       <p>Appreciation for the act the world puts on as the day peeks into the still laying splendor of the night, </p>
-                                                       ,<p> The sun steps into the darkness to play and finds Gods creature at play </p>
-                                                          <p>Man so lost yet so proud. It can only offer those moments it </p>
-                                                         <p>lights up the sky and in them we see beauty,  </p>
-                                                         <p>fear , praise and the ugly yet still in the vision of day , </p>
-                                                          <p>And as the night will come, our dreams are lit still by the Fragile memories </p>
-                                                           <p> That we share with the light (the SUN) Who could ever sing the orchestra of</p>
-                                                             <p> Our chaos and the melodies of our victories ? Life is a brief moment when</p>
-                                                             <p> You see it on a person you are never sure until the person can see it on</p>
-                                                          <p>  You . But still its never too clear Maybe because we relied more on </p>
-                                                           <p>  knowledge of love and not on LIFE love , Still separate</p>
+                                                 <p style="color:black ;font-size: 20px;"> In the evening, I remind Bruce
+to shut the door to the closet,
+because the kitten already knows
+
+a door is a wall you cannot climb—
+you must walk through.
+Yesterday
+
+I promised Jennifer
+I was over you,
+then logged into
+
+your Instagram,
+counted backwards
+to the last photo of us
+
+trying on dresses
+like I used to
+with my mother</p> 
+<p style="color:black ;font-size: 20px; text-align: right;">who promised to tell the truth,
+especially when it wasn’t pretty.
+One day, I remember
+
+leaving the mall
+with a bag full of bras
+and grabbing her
+
+hand on the escalator,
+resting my head on her shoulder.
+I was ten
+
+when she pulled away
+saying, people will
+think we’re lesbians. </p>
+<p style="color:black ;font-size: 20px;">Sometimes
+around 4 AM
+my full stomach
+
+growls like the kitten
+paws at the door
+she can’t claw through—
+
+in every house
+a room
+for the unknown.</p>
 
                                                 <a class="reply-btn" href="#">Reply <i class="fa fa-reply" aria-hidden="true"></i></a>
                                             </div>

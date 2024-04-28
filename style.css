@@ -12,7 +12,7 @@
     
     *{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
+    color: ;
 }
 .video-post-thumb img{
     width: 800px;
@@ -52,7 +52,7 @@ padding-right: 20px;
     padding-right: 20px;
      min-height: 10vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/blog-img/school1.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/blog-img/Mulopa2.jpg);
     background-position: center;
     background-size: cover;
     position: relative; 
